@@ -5,7 +5,7 @@ Program created to automatically check the norm rules that `norminette` does not
 ## QuickNorm
 Use the following command on any Hive computer to temporarily clone and use norminette+
 ```
-curl -sL bit.ly/normplus | bash)
+curl -sL bit.ly/normplus | bash
 ``` 
 
 ## Regular Usage
@@ -33,4 +33,4 @@ Run the following command to see the current version
 norminette+ --version
 ```
 ## Codam Norminette Plus
-This is just a Hive specific fixed version of https://github.com/thijsdejong/codam-norminette-plus
+This is a [Hive](https://hive.fi) specific and fixed version of [Codam Norminette Plus](https://github.com/thijsdejong/codam-norminette-plus).
