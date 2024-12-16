@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO="https://github.com/thijsdejong/codam-norminette-plus.git"
+REPO="https://github.com/jotuel/norminetteplus.git"
 
 TARGET_DIR="/Users/$USER/goinfre/quicknorm_temp_"
 
