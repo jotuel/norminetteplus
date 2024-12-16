@@ -2,7 +2,7 @@
 
 REPO="https://github.com/jotuel/norminetteplus.git"
 
-TARGET_DIR="/Users/$USER/goinfre/quicknorm_temp_"
+TARGET_DIR="/home/$USER/goinfre/quicknorm_temp_"
 
 # because we are using a potentially dangerous rm -rf, we randomize 16
 # chars in the directory name which we use and remove.
