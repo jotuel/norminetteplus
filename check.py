@@ -31,4 +31,4 @@ def print_invalid_file(filename):
     addition = "./"
     if filename.startswith("/") or filename.startswith("./"):
         addition = ""
-    print "Norme: " + addition + filename + "\nWarning: Not a valid file"
+    print ("Norme: " + addition + filename + "\nWarning: Not a valid file")

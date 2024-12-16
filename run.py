@@ -17,9 +17,9 @@ def main():
                 update()
                 return
             elif arg == "--version":
-                print VERSION
+                print (VERSION)
             else:
-                print "Invalid option"
+                print ("Invalid option")
     if not option:
         if argc == 1:
             get_files("./")
@@ -37,5 +37,5 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print "\nInterrupted"
+        print ("\nInterrupted")
         sys.exit(0)

@@ -60,13 +60,13 @@ def check_multiple_operations(f_content):
         for operation in RE_OPERATIONS:
             operations += len(re.findall(operation, line))
         if operations > 1:
-            print "Error (line " + str(l) + "): multiple operations"
+            print ("Error (line " + str(l) + "): multiple operations")
         l += 1
 
 
 def check(filename):
     """ Loops through all lines """
-    print "Norme: " + filename
+    print ("Norme: " + filename)
     f = open(filename, "r")
     f_content = f.read()
     f_content = remove_comments_and_strings(f_content)

@@ -10,7 +10,7 @@ def check_end_newline(f):
     """ Checks if the makefile ends on one empty line """
     endlines = re.search(r"\n*$", f.read()).group()
     if endlines.count('\n') != 1:
-        print "Error: file must end with a single empty line"
+        print ("Error: file must end with a single empty line")
     f.seek(0)
 
 def check_rules(f):
@@ -21,7 +21,7 @@ def check_rules(f):
             if line.startswith(rule):
                 present = 1
         if not present:
-            print "Error: missing " + rule + " rule"
+            print ("Error: missing " + rule + " rule")
         f.seek(0)
 
 def check_line_format(f):
@@ -30,15 +30,15 @@ def check_line_format(f):
     for line in f:
         line = line.replace('\t', '    ')
         if len(line) > 80 + 1:
-            print "Error (line " + str(l) + "): line has " + str(len(line) - 1) + " characters"
+            print ("Error (line " + str(l) + "): line has " + str(len(line) - 1) + " characters")
         if line.endswith(" \n"):
-            print "Error (line " + str(l) + "): spaces at the end of line"
+            print ("Error (line " + str(l) + "): spaces at the end of line")
         l += 1
     f.seek(0)
 
 def check(filename):
     """ Loops through all lines """
-    print "Norme: " + filename
+    print ("Norme: " + filename)
     f = open(filename, "r")
     check_end_newline(f)
     check_rules(f)
