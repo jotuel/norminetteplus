@@ -32,3 +32,5 @@ Run the following command to see the current version
 ```
 norminette+ --version
 ```
+## Codam Norminette Plus
+This is just a Hive specific fixed version of https://github.com/thijsdejong/codam-norminette-plus
