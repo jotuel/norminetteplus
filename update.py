@@ -16,6 +16,8 @@ def check_update():
         if raw_version.getcode() == 200:
             remote_version = raw_version.read().rstrip()
             if remote_version != VERSION:
+                print("Up to date")
+            else:
                 print(UPDATE_WARN + "version " + remote_version.decode() + " is available, you have version " \
                       + VERSION + "\n\t" + "to update run: " + UPDATECOMMAND)
         else:
